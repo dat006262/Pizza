@@ -61,7 +61,7 @@ public class PizzaGame : MonoBehaviour
                 },
                 () =>
                 {
-                    //NativeManager.Instance.SendDataScore(goc_hien_tai.ToString());
+                    NativeManager.Instance.SendDataScore(goc_hien_tai.ToString());
                     SoundManager.Instance.PlaySfxOverride(GlobalSetting.Instance.soundDataSO.GetSfx(SoundDataSO._SoundEnum.KnifeDown));
                     tween = pizzaClockWise.DOFade(0, 2f);
                     pizzaClockWise.transform.DOMove(pizzaClockWise.transform.position + direcMove, 1);
